@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#4d91b9;
+        }
+
+        header {
+            background-color: #27703d;
+            color: #000000;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 65px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #617032;
+            color: #f5f3f3;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .section-content {
+            background-color: #f1f1f1;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #b83e3e;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #751919;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #551212;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="/p.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>THARANI P</h1>
+            <p>FRONTEND DEVELOPER</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="summary">
+        <div class="section-content">
+            <h2>Summary</h2>
+            <p>"Creative and detail-oriented Frontend Developer with expertise in building responsive, 
+                user-friendly web applications. Proficient in HTML, CSS, JavaScript, and modern frameworks like React.js, 
+                Vue.js, or Angular. Skilled in UI/UX design principles, ensuring seamless user experiences through pixel-perfect interfaces. 
+                Experienced in optimizing performance, implementing animations, and integrating APIs. Passionate about staying updated with 
+                the latest web technologies and collaborating with teams to deliver engaging digital experiences.</p>
+
+        </div>
+    </section>
+
+    <section id="qualifications">
+        <div class="section-content">
+            <h2>Qualifications</h2>
+            <p>B.sc. COMPUTER SCIENCE WITH ARTIFICIAL INTELLIGENCE</p>
+            
+            
+        </div>
+    </section>
+
+    <section id="expertise">
+        <div class="section-content">
+            <h2>Expertise</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>Python</li>
+                <li>java</li>
+                <li>c++</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">E Cart website</a></li>
+                <li><a href="#">Interactive Calculator</a></li>
+                <li><a href="#">IBM chatbot</a></li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="/r.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>c:\Users\Saint gobain\Desktop\NM PROJECT\portfolio-main\r.pdf.pdf
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 tharani p</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
